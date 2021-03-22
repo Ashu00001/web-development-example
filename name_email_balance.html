@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form method="post">
+<!-- 	in action we have to specify the url to which form has to send the data to
+	method is used to specify which http request we are using two http request are get and post -->
+	<!-- get is not that much secure because it becomes the part of url link in browser but post is more secure but can be seen by inspect under network section -->
+	<div>
+	<label for="name" >Name</label><br>
+	<input type="text" id="name" name="name">
+	</div>
+	<div><label for="username"  >Email</label>
+		<br>
+	<!-- in for we have to specify which element the label is for using id-->
+	<input type="text" id="email" required placeholder="email@xyz.com" name="email"> 
+	<!-- placeholder acts like hint in android -->
+	</div>
+<!-- value attribute is used if we want to used some default value as a data -->
+<!-- if we declare some field as disabled then it wont be changed after and would be constant also it is like boolean-->
+	<div>
+	<label for="Amount" >Amount</label><br>
+	<input type="number" id="Amount" required name="Amount">
+	</div>
+	<div>
+		<br>
+	<input type="submit" name="update" value="Confirm">
+	</div>
+</form>
+
+</body>
+</html>
