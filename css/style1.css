@@ -1,0 +1,56 @@
+*{
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+}
+h1{
+  font-size:60px;
+}
+body{
+background-image: url('C:\Users\ashug\Desktop\the sparks foundation\images\back.jpg');
+}
+h1,p{
+  font-size: 16px;
+  font-family: sans-serif;
+}
+#blog-title:hover{
+  color: orange;
+}
+/*grouping can be done as shown above*/
+.nav{
+	background-color:black;
+  overflow: hidden;
+}
+.nav a{
+	float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+i{
+font-size: 50px;
+color: white;
+}
+li h4{
+text-transform: uppercase;
+font-family: cursive;
+
+}/*
+above code would search all the h4 items within the list and apply the style to them this is nesting
+/*this would do the change to all the list if we want for some lists then classes would be useful*/
+.uppercase{
+  text-transform: uppercase;
+/*this will open file the text in uppercase*/
+/*using text-transform : uppercase cursive would convert the text into uppercase and cursive*/
+}
+
+#setdesc p{
+color: red;
+}
+/*this is nesting with id*/
+#blog-desc{
+  color : #314831;
+}
+/*this would set all the p tags within the id sitedesc to the choosen styleBUT WOULD NOT BE APPLICABLE TO A TAG BECAUSE IT HAS MORE SPECIFITY*/
