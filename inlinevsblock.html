@@ -2,7 +2,20 @@
 <html>
 <head>
 	<title>Inline vs block</title>
+<style >
+div{
+	display: inline;
+/*	the inline display would only take space as much  its content need if we dont specify the the dimensions then the default case would be that the element would have 0 0 as dimensions same is the case for margins etc*/
+}
+span{
+	display: block;
+	/*we can explicitly declare the display of the span and div as shown*/
+}
+/*inline block enables us to overcome the property of inline as we can then set the margins and dimension*/
+/*providing negative margin would make the margin 0;*/
+</style>
 </head>
+
 <body>
 
 <p>this is a <b>sample</b> <i>italics </i>paragrah</p>
@@ -30,5 +43,13 @@
 
 <!-- div is block tag headings are block tags -->
 <!-- img tag  is inline tag anchor tag is inline tag -->
+<div id="div1">
+	abcd
+</div>
+<div id="div2">
+	qwerrty
+</div>
+<span >text1</span>
+<span>text2</span>
 </body>
 </html>
