@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flex</title>
+	<style >
+		#container{
+    height: 75vh;
+    width: 75vh;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+/*    even after the margin is given to each div then the baseline would align all three of them 
+    acrross a same margin*/
+
+    /*align-items: center; would align item in a width manner at the center*/
+/*    align-items: stretch; should strech the items accross the whole height but 
+    as we specified the height of the box it is not doing so we can use auto to see the effect*/
+/*    this will reverse the direction of the div in rowwise manner if we do specify the column then
+    it will reverse direction according to the column*/
+/*flex-wrap: wrap;*/
+/*this would not adjust the 200px 200px into lower would display the same size 200,200 of every
+div*/
+/*if flex-wrap:wrap-reverse; would reverse the wrap order*/
+}
+
+
+#container div{
+    height: 100px;
+    width: 100px;
+}
+		#div1{
+			background-color: cyan;
+			margin:10px;
+/*			order is a property that orders the div elemnet the default value is zero the higher the velue
+			the after the div would go we can also specify negative values*/
+		}
+		#div2{
+			/*flex-grow: and flex shrink would grow and shrink space according to the space left*/
+			background-color: red;
+			margin: 30px;		
+		}
+		#div3{
+			background-color: grey;
+			margin:50px;
+		}
+		#div4{
+			background-color: brown;
+			
+		}
+		#div5{
+			background-color: orange;
+			
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+<div id="div1">
+	div1
+</div>
+
+<div id="div2">
+	div2
+</div>
+
+<div id="div3">
+	div3
+</div>
+
+</div>
+</body>
+</html>

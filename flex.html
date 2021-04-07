@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flex</title>
+	<style >
+		#container{
+    height: 75vh;
+    width: 75vh;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: row-reverse;
+/*    this will reverse the direction of the div in rowwise manner if we do specify the column then
+    it will reverse direction according to the column*/
+flex-wrap: wrap;
+/*this would not adjust the 200px 200px into lower would display the same size 200,200 of every
+div*/
+/*if flex-wrap:wrap-reverse; would reverse the wrap order*/
+}
+
+/*if we use flex grow or flex shriink it would grow or shrink according to the value that has been passed accorss all the nested div (value/sum of values accoss all div)*outer container value*/
+#container div{
+    height: 200px;
+    width: 200px;
+}
+		#div1{
+			background-color: cyan;
+			order: 1;
+/*			order is a property that orders the div elemnet the default value is zero the higher the velue
+			the after the div would go we can also specify negative values*/
+		}
+		#div2{
+			/*flex-grow: and flex shrink would grow and shrink space according to the space left*/
+			background-color: red;		
+		}
+		#div3{
+			background-color: grey;
+			order: 3;
+		}
+		#div4{
+			background-color: brown;
+			order: -11;
+		}
+		#div5{
+			background-color: orange;
+			
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+<div id="div1">
+	div1
+</div>
+
+<div id="div2">
+	div2
+</div>
+
+<div id="div3">
+	div3
+</div>
+
+<div id="div4">
+	div4
+</div>
+
+<div id="div5">
+	div5
+</div>
+</div>
+</body>
+</html>
