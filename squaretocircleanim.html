@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>square to circle</title>
+	<style type="text/css">
+		
+		@keyframes changeShape{
+			from{
+				border-radius: 0%;
+			}
+			to{
+				border-radius: 50%;
+			}
+		}
+		/*we can also specify the percent instead of from and to and mid percentagesfrom-0% to-100%*/
+		div{
+			height: 200px;
+			width: 200px;
+			position: absolute;
+			top:40%;
+			left:40%;
+			background-color: aquamarine;
+			animation: changeShape 1s ease-in-out infinite alternate;
+			/*changeShape kind of acts as a function here*/
+			/*in plaxce if infinite we can use the no of time we want the animation to play also alternate would ensure that the transition takes place in both the direction inwards as well as outwards*/
+		}
+
+	</style>
+</head>
+<body>
+<div>
+	
+</div>
+</body>
+</html>
